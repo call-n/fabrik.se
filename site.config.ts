@@ -1,10 +1,8 @@
 const shared = {
 name: 'Fabrik',
 website: 'https://www.fabrik.se',
-title:
-    'Fabrik.se - Mat, dryck & kärlek',
-description:
-    'Mat, dryck och kärlek i hjärtat av Osby.',
+title: 'Fabrik.se - Mat, dryck & kärlek',
+description: 'Mat, dryck och kärlek i hjärtat av Osby.',
 image: 'https://calo.dev/static/images/banner.webp',
 };
 
@@ -18,6 +16,8 @@ description: shared.description,
 siteUrl: shared.website,
 profiles: {
     email: 'mailto:example@gmail.com',
+    instagram: 'lol',
+    mobile: '0709545403',
 },
 openGraph: {
     type: 'website',
