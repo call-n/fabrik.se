@@ -158,12 +158,14 @@ export default function Navbar() {
     useEffect(() => {
 
         const handleScroll = () => {
-            if(window.scrollY > 1000){
+            if(window.scrollY > window.innerHeight - 73){
                 setColor(true)
             } else {
                 setColor(false)
             }
         }
+
+        console.log(window.innerHeight);
 
         window.addEventListener('scroll', handleScroll);
 
