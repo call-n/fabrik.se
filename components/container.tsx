@@ -14,7 +14,6 @@ export default function Container({
         <Box as="main" id="content" position="relative" zIndex={1}>
           {children}
         </Box>
-      <Footer />
     </Box>
   );
 }
