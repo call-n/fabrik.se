@@ -3,7 +3,7 @@ import { extendTheme } from '@chakra-ui/react';
 const colors = {
   main: {
     yellow: '#eda524',
-    darkblue: '#092140',
+    darkblue: '#021222',
     red: '#e23c39',
     tan: '#ffdfc5',
     green: '#0f443c',
