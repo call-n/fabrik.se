@@ -23,7 +23,7 @@ const theme = {
   styles: {
     global: {
       'html, body': {
-        bg: 'main.darkblue',
+        bg: '#021222',
         color: 'main.coretext',
         minH: '100vh',
         overflowX: 'hidden',

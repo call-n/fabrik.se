@@ -60,11 +60,10 @@ return (
 }
 
 const items = [
-{ label: 'Boka bord', href: '/boka-bord', icon: BookingIcon },
+{ label: 'Meny', href: '/meny', icon: MenuIcon },
+{ label: 'Boka bord', href: '/booking', icon: BookingIcon },
 { label: 'Events', href: '/events', icon: EventIcon },
 { label: 'Presentkort', href: '/presentkort', icon: GiftCardIcon },
-{ label: 'Meny', href: '/meny', icon: MenuIcon },
-{ label: 'Drinkar', href: '/drinkar', icon: DrinksIcon },
 ];
 
 function DesktopNavItemGroup(props: StackProps) {
@@ -152,27 +151,25 @@ return (
 );
 }
 
-export default function Navbar() {
+export default function Navbar({hsize}:{hsize:number}) {
     const [color, setColor] = useState(false)
 
     useEffect(() => {
 
         const handleScroll = () => {
-            if(window.scrollY > window.innerHeight - 73){
+            if(window.scrollY > (window.innerHeight * hsize) - 73){
                 setColor(true)
             } else {
                 setColor(false)
             }
         }
 
-        console.log(window.innerHeight);
-
         window.addEventListener('scroll', handleScroll);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, [])
+    }, [hsize])
 
 
 return (

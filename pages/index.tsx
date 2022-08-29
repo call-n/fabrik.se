@@ -10,7 +10,7 @@ import EventCard from '../components/event-card';
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <Container hsize={1}>
       <Box className="section" paddingBlock="0">
         <Flex justifyContent="center" alignItems="center" minHeight="calc(100vh)" backgroundImage="/static/images/overview.webp" backgroundAttachment="fixed" backgroundPosition="center" backgroundRepeat="no-repeat" backgroundSize="cover" >
           <Flex padding={{ base: '1rem'}}>
@@ -21,8 +21,8 @@ const Home: NextPage = () => {
 
 
       <Box position="absolute" left="0" top="calc(100vh)" width={{ base: '0rem', md: '3rem', lg: '6.25rem' }} paddingLeft="clamp(1.375rem, 1.2rem + 0.89vw, 2rem)" display={{base: "none", md: "flex", lg: "flex"}} height="calc(100% - 100vh)" zIndex="15">
-        <Box borderLeft="1px solid" width="1rem" borderColor="main.tan"></Box>
-        <Box borderLeft="1px solid" width="1rem" borderColor="main.tan"></Box>
+        <Box borderLeft="1px solid" width="1rem" borderColor="main.tan" display={{base: "none", md: "none", lg: "flex"}}></Box>
+        <Box borderLeft="1px solid" width="1rem" borderColor="main.tan" display={{base: "none", md: "none", lg: "flex"}}></Box>
         <Box borderLeft="1px solid" width="1rem" borderColor="main.tan"></Box>
         <Box borderLeft="1px solid" width="1rem" borderColor="main.tan"></Box>
         <Box borderLeft="1px solid" width="1rem" borderColor="main.tan"></Box>
@@ -156,13 +156,13 @@ const Home: NextPage = () => {
                 {[
                   {title: 'Ost till vin – lär dig älska ost', image: '/static/images/ost.jpg', url: '/events', description: 'Välkommen på ost och vinprovning med oss på Fabrik! På denna provning guidar vi dig igenom 10 ostar av alla dess slag.', product: 'Ost'},
                   {title: 'Rom provning – bättre än vad du tror!', image: '/static/images/rom.jpg', url: '/events', description: 'Välkommen på ost och vinprovning med oss på Fabrik! På denna provning guidar vi dig igenom 10 ostar av alla dess slag.', product: 'Rom'}
-                ].map((review) => (
-                  <EventCard key={review.title} data={review} />
+                ].map((event) => (
+                  <EventCard key={event.title} data={event} />
                 ))}
               </Flex>
             </Box>
 
-            <Link href="/reviews" passHref>
+            <Link href="/events" passHref>
               <ViewMore>Ta ett titt på alla events!</ViewMore>
             </Link>
           </Box>
