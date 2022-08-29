@@ -60,10 +60,10 @@ return (
 }
 
 const items = [
-{ label: 'Boka bord', href: '/boka-bord', icon: BookingIcon },
+{ label: 'Boka bord', href: 'https://www.google.com/maps/reserve/v/dine/c/Ank1tAv6oqk?source=pa&hl=en-SE&gei=s34MY8_6DLGDxc8P-cGmwAc&sourceurl=https://www.google.com/search?client%3Dfirefox-b-d%26q%3Dfabrik%2Bosby', icon: BookingIcon },
 { label: 'Events', href: '/events', icon: EventIcon },
-{ label: 'Presentkort', href: '/presentkort', icon: GiftCardIcon },
-{ label: 'Meny', href: '/meny', icon: MenuIcon },
+{ label: 'Presentkort', href: 'https://giftup.app/place-order/b5d667d8-fafe-4b92-5a4d-08da4ded4b33?platform=hosted', icon: GiftCardIcon },
+{ label: 'Meny', href: '/#meny', icon: MenuIcon },
 { label: 'Drinkar', href: '/drinkar', icon: DrinksIcon },
 ];
 
